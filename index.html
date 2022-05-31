@@ -1,19 +1,65 @@
+<!DOCTYPE html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <header class="header__instruct">
+      <img src="./eisenhower-matrix.jpg" alt="icon with the description of the application">
+      <a class="header__instruct_link"
+          href="https://goal-life.com/page/method/matrix-eisenhower">
+          Want more details?</a>
+    </header>
+    <main class="body__content">
+      <section>
+        <p id="body__content_container">
+          <label for="body__content_lbl">Add Item</label>
+          <section class="body__content_wrap">
+            <input id="body__content_lbl" class="task" type="text">
+            <button id="buttons">Add</button>
+          </section>
+        </p>
+      </section>
+      <h3 class="body__content_todo-title">Todo</h3>
+      <section>
+        <ul id="body__incomplete_task_list">
+          <li>
+            <input type="checkbox" id="inputs">
+            <label class="task">Pay Bills</label>
+            <input type="text" class="task" id="inputs">
+            <button class="edit" id="buttons">Edit</button>
+            <button class="delete" id="buttons">
+              <img src="./remove.svg" id="delete__img" alt="icon for deleting a note">
+            </button>
+          </li>
+          <li>
+            <input type="checkbox" id="inputs">
+            <label class="task">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task" id="inputs">
+            <button class="edit" id="buttons">Save</button>
+            <button class="delete" id="buttons">
+              <img src="./remove.svg" id="delete__img" alt="icon for deleting a note">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <h3 class="body__content_completed_title">Completed</h3>
+      <section>
+        <ul id="completed__tasks_list">
+          <li>
+            <input id="inputs" type="checkbox" checked>
+            <label class="task">See the Doctor</label>
+            <input type="text" class="task" id="inputs">
+            <button class="edit" id="buttons">Edit</button>
+            <button class="delete" id="buttons">
+              <img src="./remove.svg" id="delete__img" alt="icon for deleting a note">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
 <html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
-</body>
-</html>
